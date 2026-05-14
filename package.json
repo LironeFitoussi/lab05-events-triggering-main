@@ -1,0 +1,13 @@
+{
+  "name": "order-processing-service",
+  "version": "1.0.0",
+  "description": "Simple order processing service — used in GitHub Actions labs",
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.0.0"
+  }
+}
