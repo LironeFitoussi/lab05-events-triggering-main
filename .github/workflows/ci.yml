@@ -18,7 +18,19 @@ on:
     paths:
       - src/**
       - tests/**
-
+  workflow_dispatch:
+    # Add Inputs:
+      # 1.Environment
+      inputs:
+        environment:
+          description: "Select environment for testing"
+          required: true
+          default: "staging"
+      # 2. Skip Tests
+        skip_tests:
+          description: "Skip tests execution"
+          required: false
+          default: "false"
 
 jobs:
   lint:
